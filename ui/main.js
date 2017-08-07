@@ -25,3 +25,21 @@ button.onclick= function() {
    request.send(null);
   
    };
+   // submit name
+   var nameInput = document.get.ElementById('name');
+   var name = nameInput.value;
+   var submit = document.getElementById('submit_btn');
+   submit.onclick=function() {
+     //make a request to theserver and send the name
+     // capture the list of names and render it as a list
+     var names=['name 1' , 'name 2', 'name 3' , 'name 4'];
+     var list='';
+     for(var i=0, i < names.length , i++){
+         list += '<li>' + names[i] + '</li>;
+         
+     }
+     var ul = document.getElementById('namelist');
+     ul.innerHTML = list;
+     
+   };
+   };
